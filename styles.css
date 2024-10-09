@@ -94,10 +94,9 @@ body {
 /* Medya sorguları ile mobil görünüm için düzenlemeler */
 @media (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        transform: translateX(-100%); /* Menü mobilde gizlenecek */
+        width: 250px;
+        position: fixed;
+        transform: translateX(-100%);
     }
 
     /* Menü açma butonu mobilde görünür olacak */
@@ -107,7 +106,7 @@ body {
 
     /* İçerik sola yaslanacak (mobilde menü gizleneceği için) */
     .content {
-        margin-left: 0;
+        margin-left: 10%;
         padding: 20px;
     }
 
