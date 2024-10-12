@@ -9,26 +9,50 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center;     /* Dikeyde ortalar */
+    background-color: #dedede;
+    
 }
 
 /* Sabit menü (sol panel) */
 .sidebar {
     position: fixed;
+    align-content: center;
     width: 20%;
     height: 100%;
-    background-color: #575757;
-    padding-top: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #dedede;
+    padding-top: 5%;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease; /* Menünün kaydırılabilmesi için */
 }
 
+/*fotoğraf düzenlemesi*/
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
     object-fit: cover;
+}
+
+/*kenardaki isim düzenlemesi*/
+.name {
+    text-align: center; /* Ortala */
+    font-size: 35px; /* Yazı boyutunu ayarla */
+    color: #000000; /* Yazı rengini beyaz yap */
+    margin-top: 10px; /* Fotoğrafla arasına boşluk bırak */
+    font-weight: bold; /* Kalın yaz */
+}
+
+/*kenardaki meslek düzenlemesi*/
+.job {
+    text-align: center; /* Ortala */
+    font-size: 30px; /* Yazı boyutunu ayarla */
+    color: #000000; /* Yazı rengini beyaz yap */
+    margin-top: 5px; /* Fotoğrafla arasına boşluk bırak */
+    font-weight: bold; /* Kalın yaz */
 }
 
 /* Mobilde menüyü kapatıp açmak için buton */
@@ -37,7 +61,7 @@ body {
     position: fixed;
     top: 10px;
     left: 10px;
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(0, 0, 0);
     background: none;
     border: none;
@@ -47,49 +71,31 @@ body {
 /* İçerik kısmı */
 .content {
     margin-left: 20%;
-    padding: 20px;
+    padding: 50px;
     transition: margin-left 0.3s ease;
-}
-
-.name {
-    text-align: center; /* Ortala */
-    font-size: 35px; /* Yazı boyutunu ayarla */
-    color: #c5c5c5; /* Yazı rengini beyaz yap */
-    margin-top: 10px; /* Fotoğrafla arasına boşluk bırak */
-    font-weight: bold; /* Kalın yaz */
-}
-
-.job {
-    text-align: center; /* Ortala */
-    font-size: 30px; /* Yazı boyutunu ayarla */
-    color: #c5c5c5; /* Yazı rengini beyaz yap */
-    margin-top: 5px; /* Fotoğrafla arasına boşluk bırak */
-    font-weight: bold; /* Kalın yaz */
 }
 
 .menu {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 5%;
+    margin: 5%;
     text-align: center;
 }
 
 .menu li {
-    margin: 12px 0;
+    margin: 10%;
+    background-color: #dedede
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
     display: block;
     padding: 8px;
     transition: background-color 0.3s ease;
 }
 
-.menu a:hover {
-    background-color: #575757;
-}
 
 /* Medya sorguları ile mobil görünüm için düzenlemeler */
 @media (max-width: 768px) {
@@ -115,3 +121,5 @@ body {
         transform: translateX(0); /* Menü mobilde açıldığında görünür olur */
     }
 }
+
+
