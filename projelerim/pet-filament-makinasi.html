@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Can Bilgiç - Projelerim/Pet Filament Makinası</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Menü açma butonu (mobil için) -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Sabit menü (sol panel) -->
+    <div class="sidebar" id="sidebar">
+        <img src="../foto.jpg" alt="Fotoğrafım" class="profile-photo">
+        <h2 class="name">Mert Can Bilgiç</h2>
+        <h2 class="job">Elektrik-Elektronik Mühendisi</h2>
+        <ul class="menu">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+            <li><a href="projelerim.html">Projelerim</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="projelerim">
+            <h1 style="font-size:64px;">Pet Filament Makinası</h1> <br>
+                <h2>PET şişelerden 3D Yazıcı için PET filament yapımı.</h2> <br>,
+                <p><b>Projenin Github bağlantısı için;</b></p>
+                <p><a href="https://github.com/mrtcnblgcc/Pet-Filament-Machine-by-mrtcnblgc">https://github.com/mrtcnblgcc/Pet-Filament-Machine-by-mrtcnblgc</a></p> <br>
+                <div style="text-align:center"> 
+                    <iframe align="center" width="800" height="600" src="https://www.youtube.com/embed/tgluLH4R5xo?si=kHrUX4KZ7xedLgHk">
+                    </iframe> </div>
+                    <div style="font-size: 32px;"><h3>Parça Listesi:</h3></div> <br>
+                        <h4>Elektronik;</h4>
+                            <ul>
+                                <li> 220V AC - 12V DC/5A güç kaynağı.</li>
+                                <li> Arduino Pro Mini (5V, 16 Mhz).</li>
+                                <li> A4988 Step Motor Sürücüsü.</li>
+                                <li> SSD1306 OLED Ekran.</li>
+                                <li> 12V Isıtıcı fişek.</li>    
+                                <li> IRFZ44N Mosfet.</li>
+                                <li> 100k Ohm Termistör.</li>
+                                <li> LM317T Voltaj Regülatörü.</li>
+                                <li> Açma-kapama anahtarı.</li>
+                                <li> Kondansatörler (2x4.7uF, 1x100nF).</li>
+                                <li> Dirençler (1x100r, 1x330r, 5x10k, 1x1k, 1x4.7k).</li>
+                                <li> 2.54mm Erkek ve Dişi Konnektörler.</li>
+                            </ul> <br>
+                        <h4>Mekanik;</h4>
+                            <ul>
+                                <li> 3D yazıcıdan çıkartılmış parçalar. Dişli seti için ecodecat3d'nin STL dosyalarını kullandım. Sitesini 
+                                    ziyaret edebilirsiniz; ( https://sites.google.com/view/makeyourownecopet/inicio ).</li>
+                                <li> Dişli takımı için 4x 608zz model rulman.</li>
+                                <li> Bazı ölçülerde vida ve somunlar.</li>
+                                <li> 3D Yazıcı ekstruder seti. (Isıtma bloğu ve nozzle) Nozzle’ı 1,75mm'ye kadar genişletmeniz gerekiyor.</li>
+                                <li> Ekstruder'i tutmak için L şeklinde metal raf tutucu.</li>
+                                <li> 3D yazıcıdan çıkartılmış şişe kesici. Ben bunu kullandım; ( https://www.thingiverse.com/thing:5442876 ).</li>
+                                <li> Zemin için uygun tahta parçaları.</li>
+                            </ul>
+                            <br>     
+                    <div style="font-size: 32px;"><h3>Kurulum </h3></div><br>
+                        <h4>Mekanik; </h4>
+                            <p>Dişli kutusu ve ısıtıcı bloğunu yerleştireceğiniz tahta veya benzeri bir taban gerekir. Öncelikle dişli kutusunu 
+                                basıp tahtaya monteleyin sonra step motoru dişli kutusuna bağlayın. Daha sonra ısıtıcı bloğu dişli kutusuyla 
+                                aynı hizaya yerleştirin. Ben güç kaynağını kullandığım tahta zeminin arkasına yerleştirdim. İsterseniz bağımsız 
+                                bir yere yerleştirebilirsiniz. Pet şişeleri kesmek için kullanacağımız parçayı da benim yaptığım gibi bu ahşap 
+                                tabana yerleştirebilirsiniz</p> <br>
+                            <p> 1.1) Dişli kutusu ve ısıtıcı bloğun yerleştirilmesi.</p> 
+                            <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim1.jpg" alt="1.1" 
+                                width="500px" height="300px"> </div><br>
+                            <p> 1.2) Güç kaynağını ve PET şişeleri kesmek için kullanacağımız parçayı yerleştirme.</p> 
+                            <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim2.jpg" alt="1.2" 
+                                width="500px" height="300px"> </div><br>
+                            <p>Bütün mekanik montajlar bunlar.</p><br>
+                        <h4>Elektronik; </h4>
+                            <p>Elektronik kartı delikli plaket üzerine yerleştirdim. Ancak, PCB’de üretilebilir. Devre şeması aşağıdaki gibidir:</p><br>
+                            <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim3.jpg" alt="schematics" 
+                                width="500px" height="300px"> </div><br>
+                            <p>Delikli plaket üzerinde devrenin oluşturulması;</p><br>
+                            <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim4.jpg" alt="2.1" 
+                                width="500px" height="300px"> </div><br>
+                            <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim5.jpg" alt="2.2" 
+                                width="500px" height="300px"> </div><br>
+                            <p>OLED ekran üzerindeki başlangıç ve ana menü görünümü;</p><br>
+                            <img src="pet-filament-makinasi_sources/Resim6.jpg" alt="3.1" >
+                            <img src="pet-filament-makinasi_sources/Resim7.jpg" alt="3.2" > <br>
+                            <p> Sağdaki buton "OK" tuşudur. Soldaki buton "DOWN" tuşudur ve ortadaki buton "UP" tuşudur. </p> 
+                            <p>Isıtıcıyı istediğiniz değerde çalıştırmak için ">" sembolü "Set Temp" üzerindeyken "OK" tuşuna bir kez basın. 
+                                Ekranda hiçbir değişiklik olmayacak. Ancak "UP" tuşuna bastığınızda değer onar onar artacaktır. Aynı şekilde 
+                                azaltmak istediğinizde "DOWN" tuşuna basın. Değer onar onar azalacaktır. İstediğiniz değere ulaştığınızda "OK" 
+                                tuşuna bastığınızda ana menüye geri döneceksiniz.</p>
+                            <p>Step motorunu çalıştırmak ve hızını ayarlamak için de aynısını yapmalısınız. Menüde "Set Temp" ve "Set Motor" 
+                                arasında gezinmek için "UP" ve "DOWN" düğmelerine basmalısınız.</p><br>
+
+                    <div style="font-size: 32px;"><h3>Üretim</h3></div>
+                        <p>Eğer mekanik ve elektronik aksamlarınız tamamsa PET'ten filament yapma sürecine hazırsınız demektir, tebrikler! :)
+                            </p> <br>
+                        <p>Öncelikle şişenin üst ve alt tarafını kesmeniz gerekiyor. Bundan sonra, şişeyi şişe dilimleyiciye yerleştirebilmek 
+                            için şişenin ucuna küçük bir kıymık şeklinde bir kesim yapmanız gerekecek.</p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim8.jpg" alt="4.1" 
+                            width="500px" height="300px"> </div> <br>
+                        <p>Ardından kıymık şeklinde kesilen küçük parçayı dilimleyicinin içinden geçirin;</p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim9.jpg" alt="4.2" 
+                            width="500px" height="300px"> </div> <br>   
+                        <p>Geçirdiğiniz kısımdan çekerek şerit halinde kesilmesini sağlayın. </p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim10.jpg" alt="4.3" 
+                            width="500px" height="300px"> </div> <br>  
+                        <p>Ve sonuç; </p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim11.jpg" alt="4.4" 
+                            width="500px" height="300px"> </div> <br>
+                        <p>Şimdi şişeyi dilimledikten sonra dilimlediğimiz pet şişeyi ince bir şekilde bir daha kesiyoruz. Daha sonra ısıtıcı 
+                            blok soğukken ısıtıcıdan geçiriyoruz. </p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim12.jpg" alt="4.5" 
+                            width="500px" height="300px"> </div> <br>
+                        <p>Geçtikten sonra ısıtıcıyı 180°C ile 200°C arasında ısıtıyoruz. Isıtıcı istenilen sıcaklığa ulaştığında boru benzeri bir 
+                            cisimle çıkan filamenti dişliye bağlı iple sıkıştırıyoruz. Bu işlemden sonra motoru çalıştırıp sarmasını sağlıyoruz. 
+                            </p> <br>
+                        <p>Ve işte filamentimiz; </p> <br>
+                        <div style="text-align: center;"> <img src="pet-filament-makinasi_sources/Resim13.jpg" alt="4.6" 
+                            width="500px" height="300px"> </div> <br> 
+                            
+        </section>
+    </div>
+
+
+        <!-- JavaScript ile menüyü açıp kapatma -->
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+        
+</body>
+
+</html>
