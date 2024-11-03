@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Can Bilgiç - İletişim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Menü açma butonu (mobil için) -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Sabit menü (sol panel) -->
+    <div class="sidebar" id="sidebar">
+        <img src="foto.jpg" alt="Fotoğrafım" class="profile-photo">
+        <h2 class="name">Mert Can Bilgiç</h2>
+        <h2 class="job">Elektrik-Elektronik Mühendisi</h2>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="projelerim/projelerim.html">Projelerim</a></li>
+            <li><a href="blog/blog.html">Blog</a></li>
+        </ul>
+    </div>
+
+    <!-- İçerik alanı -->
+    <div class="content">
+        <section id="iletisim">
+            <div style="font-size: 48px;"><h1>İletişim</h1></div> <br><br><br><br><br>
+
+            <p style="font-size: 24px;"> <b> Mail:</b> <a href="mailto:mertcb99@gmail.com">mertcb99@gmail.com </a> </p> <br> <br> ""
+
+            <p style="font-size: 24px;"> <b> Linkedin:</b> <a href="http://www.linkedin.com/in/mert-can-bilgiç-4005751b2" target="_blank">www.linkedin.com/in/mert-can-bilgiç;-4005751b2</a> </p> <br> <br>
+
+            <p style="font-size: 24px;"> <b> Github:</b> <a href="https://github.com/mrtcnblgcc" target="_blank">https://github.com/mrtcnblgcc</a> </p> <br> <br>
+
+            <p style="font-size: 24px;"> <b> YouTube:</b> <a href="https://www.youtube.com/@mrtcnblgcc" target="_blank"> https://www.youtube.com/@mrtcnblgcc </a> </p> <br> <br>
+        </section>
+    </div>
+
+    <!-- JavaScript ile menü kontrolü -->
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
