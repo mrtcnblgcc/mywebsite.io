@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Can Bilgiç - Projelerim</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Menü açma butonu (mobil için) -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Sabit menü (sol panel) -->
+    <div class="sidebar" id="sidebar">
+        <img src="../foto.jpg" alt="Fotoğrafım" class="profile-photo">
+        <h2 class="name">Mert Can Bilgiç</h2>
+        <h2 class="job">Elektrik-Elektronik Mühendisi</h2>
+        <ul class="menu">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+            <li><a href="projelerim.html">Projelerim</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="projelerim">
+            <h1 style="font-size:56px;" style="text-decoration: underline;">Projelerim</h1>
+            <ul class="menu-projelerim" style="font-size:32px;" >
+                <li> <a href="pet_filament_makinasi/pet-filament-makinasi.html"> >Pet Filament Makinasi</a></li>
+                <p style="font-size:18px;"> PET şişelerden 3D Yazıcı için PET filament yapımı. Detaylar için başlığa tıklayınız.</p>
+                <div style="text-align:center"> 
+                <iframe align="center" width="600" height="400" src="https://www.youtube.com/embed/tgluLH4R5xo?si=kHrUX4KZ7xedLgHk">
+                </iframe> </div>
+                <br>
+
+                <li><a href=""></a></li>
+                <p style="font-size:18px;"> </p>
+                <br>
+
+            </ul>
+        </section>
+    </div>
+
+
+        <!-- JavaScript ile menüyü açıp kapatma -->
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+        
+</body>
+
+</html>
